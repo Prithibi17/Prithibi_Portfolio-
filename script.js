@@ -838,8 +838,8 @@ function initArchiveModal() {
                     .map((item, i) => `
                         <div class="forensic-frame frame-${i + 1}">
                             ${item.type === 'video'
-                                ? `<video src="${item.url}" autoplay loop muted playsinline preload="metadata" aria-label="Project evidence video"></video>`
-                                : `<img src="${item.url}" alt="Forensic Photo">`
+                                ? `<video autoplay loop muted playsinline aria-label="Project evidence video"><source src="${item.url}" type="video/webm"></video>`
+                                : `<img src="${item.url}" alt="Project evidence ${i + 1}">`
                             }
                         </div>
                     `).join('');
