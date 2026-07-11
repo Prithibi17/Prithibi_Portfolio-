@@ -704,7 +704,7 @@ function initArchiveModal() {
                 'Clean UI and Performance Optimization'
             ],
             media: [
-                { type: 'video', url: '/assets/evidence_01.webm' },
+                { type: 'video', url: '/assets/evidence_01.mp4' },
                 { type: 'image', url: '/assets/evidence_01.png' }
             ],
             additionalLink: 'https://isan4f4e.insforge.site'
@@ -839,7 +839,7 @@ function initArchiveModal() {
                     .map((item, i) => `
                         <div class="forensic-frame frame-${i + 1}">
                             ${item.type === 'video'
-                                ? `<video autoplay loop muted playsinline aria-label="Project evidence video"><source src="${item.url}" type="video/webm"></video>`
+                                ? `<video autoplay loop muted playsinline aria-label="Project evidence video"><source src="${item.url}" type="video/mp4"></video>`
                                 : `<img src="${item.url}" alt="Project evidence ${i + 1}">`
                             }
                         </div>
