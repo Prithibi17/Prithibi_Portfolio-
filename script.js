@@ -704,7 +704,8 @@ function initArchiveModal() {
                 'Clean UI and Performance Optimization'
             ],
             media: [
-                { type: 'video', url: '/assets/evidence_01.webm' }
+                { type: 'video', url: '/assets/evidence_01.webm' },
+                { type: 'image', url: '/assets/evidence_01.png' }
             ],
             additionalLink: 'https://isan4f4e.insforge.site'
         },
