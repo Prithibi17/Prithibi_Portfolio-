@@ -36,6 +36,12 @@
     }
     </script>
     
+    <!-- Preload critical assets for fast loading -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="/assets/evidence_01.webm" as="video" type="video/webm">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <!-- Fonts: Special Elite, IBM Plex Mono & Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&family=Special+Elite&family=IBM+Plex+Mono:wght@400;700&family=Bebas+Neue&family=Oswald:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
@@ -248,7 +254,7 @@
                         <span class="evidence-num">EVIDENCE #01</span>
                     </div>
                     <div class="polaroid-frame">
-                        <video src="/assets/evidence_01.webm" poster="/assets/evidence_01.png" autoplay loop muted playsinline preload="metadata" aria-label="EVIDENCE #01 video"></video>
+                        <video src="/assets/evidence_01.webm" autoplay loop muted playsinline preload="auto" aria-label="EVIDENCE #01 video"></video>
                         <div class="polaroid-shadow"></div>
                     </div>
                     <div class="card-body">
