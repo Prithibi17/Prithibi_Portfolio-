@@ -49,10 +49,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- SVG Filter for Paper Tear Noise -->
+    <svg style="position: absolute; width: 0; height: 0;">
+        <filter id="paper-tear">
+            <feTurbulence type="fractalNoise" baseFrequency="0.08" numOctaves="3" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+    </svg>
+
     <!-- Loading Screen -->
     <div id="loading-screen" class="loading-screen">
-        <div class="css-crime-tape">
-            <span>CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS</span>
+        <div class="loading-screen-bg"></div>
+        <div class="tape-half tape-left">
+            <div class="css-crime-tape">
+                <span>CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS</span>
+            </div>
+        </div>
+        <div class="tape-half tape-right">
+            <div class="css-crime-tape">
+                <span>CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS • CRIME SCENE DO NOT CROSS</span>
+            </div>
         </div>
     </div>
     <nav class="navbar dashboard-nav">
