@@ -2304,7 +2304,7 @@ body {
     position: absolute;
     top: 0; left: 0; width: 100vw; height: 100vh;
     background: #0f0e0d; /* Dark theme color */
-    transition: opacity 0.5s ease-out 0.5s;
+    transition: opacity 1s ease-out 1s;
 }
 body.loaded .loading-screen-bg {
     opacity: 0;
@@ -2315,7 +2315,7 @@ body.loaded .loading-screen-bg {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 2.5s cubic-bezier(0.19, 1, 0.22, 1);
     filter: url(#paper-tear);
 }
 .tape-left {
