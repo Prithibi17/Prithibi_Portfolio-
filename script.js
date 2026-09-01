@@ -730,19 +730,19 @@ function initArchiveModal() {
             additionalLink: 'https://prithibi17.github.io/photo-web/'
         },
         {
-            name: 'FUTURISTIC CITYSCAPE',
-            subTitle: 'URBAN ARCHITECTURE R&D',
-            caseNo: '#0713-CTY',
-            description: 'Exploration of futuristic urban environments, blending neon aesthetics with sustainable architecture concepts. This project focused on creating immersive 3D environments for next-generation digital experiences.',
-            status: 'ARCHIVED',
+            name: 'WEB AGENCY',
+            subTitle: 'DIGITAL SOLUTIONS & BRANDING',
+            caseNo: '#0713-WEB',
+            description: 'A professional web agency delivering high-quality digital solutions, focusing on modern web development, UI/UX design, and brand identity.',
+            status: 'ACTIVE',
             evidence: [
-                'Next-Gen 3D Modeling',
-                'Neon Lighting Systems',
-                'Sustainable Urban Concepts',
-                'Immersive Environment Design'
+                'Modern Web Development',
+                'UI/UX Design',
+                'Brand Identity',
+                'Digital Strategy'
             ],
             media: [
-                { type: 'image', url: '/assets/proj_cityscape.png' }
+                { type: 'image', url: '/assets/evidence_03.png' }
             ],
             additionalLink: '#'
         },
