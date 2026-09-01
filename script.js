@@ -107,6 +107,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // Force refresh on full window load to capture correct element positions for ropes
 window.addEventListener('load', () => {
     ScrollTrigger.refresh();
+    
+    // Hide loading screen after a minimum time to allow animation to play
+    setTimeout(() => {
+        document.body.classList.add('loaded');
+    }, 800);
+
     // One extra layout pass to ensure ropes are perfectly aligned after images load
     setTimeout(() => {
         ropeLoop();
@@ -121,7 +127,7 @@ function ropeLoop() {
 }
 
 function initDashboardAnimations() {
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({ delay: 1.2 });
 
     // Navigation bar entrance
     tl.from('.dashboard-nav', {

@@ -2286,3 +2286,36 @@ body {
     .tab-arrow { display: none; }
     .modal-next-pixel-btn { margin: 20px; }
 }
+
+
+/* Loading Screen */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0f0e0d; /* Dark theme color */
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+    overflow: hidden;
+}
+.loading-tape-img {
+    width: 150vw;
+    max-width: none;
+    height: auto;
+    object-fit: cover;
+    transform: rotate(-5deg);
+    animation: tapePulse 2s infinite alternate;
+}
+@keyframes tapePulse {
+    from { transform: rotate(-5deg) scale(1); }
+    to { transform: rotate(-5deg) scale(1.05); }
+}
+body.loaded .loading-screen {
+    opacity: 0;
+    visibility: hidden;
+}
