@@ -2303,17 +2303,35 @@ body {
     transition: opacity 1s ease-out, visibility 1s ease-out;
     overflow: hidden;
 }
-.loading-tape-img {
-    width: 150vw;
-    max-width: none;
-    height: auto;
-    object-fit: cover;
-    transform: rotate(-5deg);
+.css-crime-tape {
+    width: 200vw;
+    background: #FADB0F; /* bright yellow tape color */
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 15px 0;
+    transform: rotate(-10deg);
+    display: flex;
+    white-space: nowrap;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     animation: tapePulse 2s infinite alternate;
 }
+.css-crime-tape span {
+    animation: tapeScroll 10s linear infinite;
+    display: inline-block;
+}
 @keyframes tapePulse {
-    from { transform: rotate(-5deg) scale(1); }
-    to { transform: rotate(-5deg) scale(1.05); }
+    from { transform: rotate(-10deg) scale(1); }
+    to { transform: rotate(-10deg) scale(1.05); }
+}
+@keyframes tapeScroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-20%); }
 }
 body.loaded .loading-screen {
     opacity: 0;
